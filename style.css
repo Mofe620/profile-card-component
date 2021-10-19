@@ -1,0 +1,13 @@
+body {
+    background-color: hsl(227, 10%, 46%);
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    margin: 2em;
+    z-index: 3;
+}
