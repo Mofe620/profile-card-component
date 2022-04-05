@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 
 body {
+    display: flex;
     background-color: hsl(185, 75%, 39%);
     position: fixed;
     width: 1080px;
@@ -27,7 +28,7 @@ body {
     height: 350px;
     width: 300px;
     left: 50%; 
-    margin-top: 8em;
+    margin-top: 10em;
     background-color: #fff;
     color: #333;
     border-radius: 10px;
@@ -106,4 +107,30 @@ body {
 hr {
     position: relative;
     top: -40px;
+}
+@media (max-width:1200px) {
+    body {
+        display: grid;
+        grid-template-columns: 1;
+        justify-content: center;
+    }
+    #profile-card {
+        position: fixed;
+        left: 25%;
+        right: auto;
+        grid-column: 1;
+        align-items: center;
+        justify-content: center;
+        height: 350px;
+        width: 300px;
+        background-color: #fff;
+        color: #333;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        z-index: 3;
+        transform: scale(1.2)
+    }
+    #top {
+        display: none;
+    }
 }
