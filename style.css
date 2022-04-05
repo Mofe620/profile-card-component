@@ -1,13 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
 body {
-    background-color: hsl(227, 10%, 46%);
+    background-color: hsl(185, 75%, 39%);
+    position: fixed;
+    width: 1080px;
+    height: 100px;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
-.card {
+#top {
+    position: fixed;
+    top: -500px;
+    left: -300px;
+}
+
+#bottom {
+    position: fixed;
+    bottom: -650px;
+    right: -300px;
+}
+
+#profile-card {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 300px;
+    left: 50%; 
+    margin-top: 8em;
     background-color: #fff;
     color: #333;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 2em;
-    margin: 2em;
     z-index: 3;
+}
+
+#profile-card .bg {
+    width: 100%;
+    align-self: flex-start;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#profile-card .dp {
+    position: relative;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 5px;
+    border-radius: 50%;
+    align-self: flex-end;
+    top: -50px;
+    right: -32%;
+}
+#profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -50px;
+}
+#place {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -70px;
+  font-size: 12px;
+  height: 0em;
+  padding-bottom: 0;
+}
+#pinfo {
+    position: relative;
+    margin-bottom: 2em;
+    top: -300px;
+}
+#footer {
+    position: relative;
+    top: -55px;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0.5em;
+}
+.stats, .stat-value {
+    display: flex;
+    justify-content: space-evenly;
+}
+.stat-value p {
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+.stats p {
+    position: relative;
+    left: -5px;
+    font-size: 8px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-right: 3.0em;
+}
+.stats p:last-child {
+    position: relative;
+    left: 0px;
+}
+hr {
+    position: relative;
+    top: -40px;
 }
